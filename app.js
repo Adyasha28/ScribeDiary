@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import router from "./routes/user-routes";
 import blogRouter from "./routes/blog-routes";
 import cors from "cors";
-require('dotenv').config();
+import 'dotenv/config'
 const app = express();
 app.use(cors());    //cors is used so that we can send request from on server to another, which is restricted in most browsers
 app.use(express.json());
